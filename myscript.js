@@ -3,10 +3,9 @@ let userInputAge = prompt('Inserisci la tua età. Età: ');
 
 let ticketPrice = userInputNumberKm * 0.21;
 
-if (userInputAge < 18) {
-    ticketPrice -= ticketPrice * 0.2;
-}
 if (userInputAge >= 65) {
+    ticketPrice -= ticketPrice * 0.2;
+} else if (userInputAge < 18) {
     ticketPrice -= ticketPrice * 0.4;
 }
 
